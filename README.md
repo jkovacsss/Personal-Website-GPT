@@ -1,35 +1,22 @@
-# Personal Website GPT
+# Personal Website
 
-A responsive, single-page personal website built with plain HTML, CSS, and JavaScript. No build tools or dependencies are required.
+A simple, responsive personal website made with plain HTML, CSS, and JavaScript.
 
-## Files
+## Sections
+- About me
+- Hobbies
+- Books I've read
+- Blog & thoughts
 
-- `index.html` — page content and semantic structure
-- `styles.css` — responsive layout, colors, typography, and project-card illustrations
-- `script.js` — mobile navigation and automatic footer year
-
-## Personalize it
-
-1. In `index.html`, replace **Your Name** and the **YN** initials with your name and initials.
-2. Replace `you@example.com` with your email address.
-3. Update the About section, projects, interests, and location so they reflect you.
-4. Change the page title and description in the `<head>`.
-5. If you add external project links, point each project card to the appropriate page or repository.
+## Personalize
+1. In `index.html`, replace “Your Name” with your name.
+2. Edit the About me and Hobbies text to reflect you.
+3. Add book titles and short notes in the Books I've read section.
+4. Replace the sample blog idea with your own post, and copy the `<article class="post">...</article>` structure to add more posts.
+5. Adjust colors and spacing in `styles.css` if you want to customize the look.
 
 ## Preview locally
-
-Open `index.html` in a browser. For the best local development experience, use the Live Server extension in Visual Studio Code.
+Open `index.html` in a browser. Keep `index.html`, `styles.css`, and `script.js` in the same folder.
 
 ## Publish with GitHub Pages
-
-1. Open this repository on GitHub and select **Settings**.
-2. Choose **Pages** in the sidebar.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select the `main` branch and `/(root)`, then save.
-5. After GitHub Pages finishes deploying, the published URL will appear in the Pages settings.
-
-The repository can remain private, but whether the published site can be public depends on your GitHub plan and organization settings.
-
-## Customize the look
-
-The main colors and font stacks are defined as CSS variables at the top of `styles.css`. The design uses a dark background, lime accent, and responsive layouts for smaller screens. Google Fonts are loaded from an external stylesheet; system fonts will be used if they are unavailable.
+In the repository, open **Settings → Pages**, choose **Deploy from a branch**, then select `main` and `/(root)`. GitHub Pages will publish the site and show its URL in the Pages settings. Updates pushed to `main` will be published automatically.

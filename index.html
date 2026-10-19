@@ -4,69 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="A personal website for interests, books, and writing.">
-  <title>Your Name | Personal Website</title>
+  <title>Home | Personal Website</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="site-title" href="#home">Your Name</a>
+      <a class="site-title" href="index.html">Your Name</a>
       <nav aria-label="Main navigation">
-        <a href="#about">About me</a>
-        <a href="#hobbies">Hobbies</a>
-        <a href="#books">Books read</a>
-        <a href="#blog">Blog</a>
+        <a class="active" aria-current="page" href="index.html">Home</a>
+        <a href="about.html">About me</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="books.html">Books read</a>
+        <a href="blog.html">Blog & thoughts</a>
       </nav>
     </div>
   </header>
-
-  <main class="container" id="home">
-    <section class="intro">
+  <main class="container page-main">
+    <section class="page-intro">
       <p class="eyebrow">PERSONAL WEBSITE</p>
       <h1>Hello, I'm Your Name.</h1>
       <p class="intro-text">A place to share a little about myself, the things I enjoy, the books I read, and ideas I’m working through.</p>
     </section>
-
-    <section class="content-section" id="about">
-      <h2>About me</h2>
-      <p>I’m interested in engineering, technology, sports, and understanding how people think. I like learning how things work, solving practical problems, and exploring questions that don’t always have easy answers.</p>
-      <p>This website is a simple home for my interests and writing. I’ll add to it as I go.</p>
-    </section>
-
-    <section class="content-section" id="hobbies">
-      <h2>Hobbies</h2>
-      <ul class="simple-list">
-        <li><strong>Football:</strong> Watching Arsenal, following matches, and thinking about tactics.</li>
-        <li><strong>Technology:</strong> Exploring engineering, automation, and new tools.</li>
-        <li><strong>Games:</strong> Chess, word games, and a bit of friendly competition.</li>
-        <li><strong>Reading and writing:</strong> Learning about ideas and putting my thoughts into words.</li>
-      </ul>
-    </section>
-
-    <section class="content-section" id="books">
-      <h2>Books I’ve read</h2>
-      <p>A running list of books I’ve finished, with a few notes on what I took away from them.</p>
-      <div class="empty-note">Add books here as you read them — including the title, author, and a short note or rating if you like.</div>
-    </section>
-
-    <section class="content-section" id="blog">
-      <h2>Blog & thoughts</h2>
-      <p>Short posts about ideas I’m considering, things I’m learning, and questions I find interesting.</p>
-      <article class="post">
-        <p class="post-date">FIRST POST · DRAFT IDEA</p>
-        <h3>What makes an idea worth pursuing?</h3>
-        <p>A space to explore an idea, explain why it interests me, and work through the arguments for and against it. Replace this example with your first post when you’re ready.</p>
-      </article>
-      <p class="small-note">You can add new posts by copying the article structure in this section, or later move posts into their own pages.</p>
+    <section class="content-section">
+      <h2>Explore</h2>
+      <p>Use the tabs above to visit each section. Each page has its own space for writing, photos, and updates.</p>
+      <div class="page-grid">
+        <a class="page-card" href="about.html"><h3>About me</h3><p>A little about who I am and what interests me.</p></a>
+        <a class="page-card" href="hobbies.html"><h3>Hobbies</h3><p>Sports, technology, games, and things I enjoy.</p></a>
+        <a class="page-card" href="books.html"><h3>Books read</h3><p>A growing list of books and notes.</p></a>
+        <a class="page-card" href="blog.html"><h3>Blog & thoughts</h3><p>Ideas, reflections, and things I’m learning.</p></a>
+      </div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Your Name</span>
-      <a href="#home">Back to top ↑</a>
-    </div>
-  </footer>
+  <footer class="site-footer"><div class="container footer-inner"><span>© <span id="year"></span> Your Name</span><a href="index.html">Home ↑</a></div></footer>
 </body>
 </html>
